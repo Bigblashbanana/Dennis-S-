@@ -6,7 +6,6 @@ public class Camerea : MonoBehaviour
 {
 
     public float MouseSensitiviy = 100f;
-
     public Transform playerBody;
 
     float Xrotation = 0f; 
@@ -27,5 +26,7 @@ public class Camerea : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(Xrotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
+
+
     }
 }

@@ -14,7 +14,8 @@ public class PlayerMovemt : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-
+ 
+    
     bool isGrounded; 
 
     // Update is called once per frame
@@ -40,7 +41,7 @@ public class PlayerMovemt : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
-
+        
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
